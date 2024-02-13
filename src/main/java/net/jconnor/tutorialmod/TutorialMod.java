@@ -1,6 +1,7 @@
 package net.jconnor.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.jconnor.tutorialmod.block.ModBlocks;
 import net.jconnor.tutorialmod.item.ModCreativeModeTabs;
 import net.jconnor.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -35,6 +36,7 @@ public class TutorialMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
